@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook-sign-up</title>
+    <link rel="stylesheet" href="./facebook-sign-up.css">
+  </head>
+  <body>
+    <div>
+      <h1>
+        facebook
+      </h1>
+        <div class="login-page">
+          <form>
+            <p id="head">Create a new account</p>
+            <p id="header">It's quick and a easy</p>
+            <hr>
+            
+              <div class="id">
+                <input type="text" class="persona" placeholder="First name" required />
+                <input type="text" class="persona" placeholder="Surname" required/>
+              </div>
+              <!-- for date of birth -->
+              <label for="date of birth" class="sub-head">
+                Date Of Birth<span>?</span>
+              </label><br>
+              <div class="date-div">
+                
+                <select name="date" class="date">
+                  <option value="day" >17</option>
+                </select>
+                <select name="date" class="date">
+                  <option value="month" >October</option>
+                </select>
+                <select name="date" class="date">
+                  <option value="year" >2024</option>
+                </select>
+              </div>
+             
+              <!-- for gender -->
+              <p  class="sub-head">Gender <span>?</span></p>
+              <div class="main-gender">
+                <div class="gender">
+                  <label type="gender">Male</label>
+                  <span class="radio">
+                    <input type="radio" name="Gender"/>  
+                  </span>
+                  
+                </div>
+                <div class="gender">
+                  <label type="gender">Female</label>
+                  <span class="radio">
+                    <input type="radio" name="Gender" />
+                  </span> 
+                </div>
+                <div class="gender">
+                  <label type="Gender">Custom</label>
+                  <span class="radio"><input type="radio" name="Gender" />
+                  </span></div>
+              </div>
+            
+
+            <!-- for phone number /email and password  -->
+            <div class="email-password ">
+              <input
+                type="text" class="details"
+                placeholder="Mobile number or Email address"
+                required
+              />
+              <br />
+              <input type="text"  class="details" placeholder="New password" required />
+            </div>
+            <p class="text">
+              People who use our service may have uploaded your cnntact information to Facebook. Learn more
+            </p>
+            <p class="text">
+              By clicking Sign up,you agree to ousr Terms,Privacy Policy and Cookies Policy.
+               You may recieve SMS notifications from us and can opt out any time.
+            </p>
+            <div class="button">
+              <button>
+                Sign up
+              </button> 
+            </div>
+            <div class="a">
+              <a href="../class exercise/sign-up.html" >
+                Already have an account &quest;
+              </a>
+            </div>
+           
+          </form>
+        </div>
+    </div>
+    
+  </body>
+  <script>
+    
+
+alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+
+const reverse = (alpha)=>{
+    rIndex = 25 - alphabet.indexOf(alpha)
+    return alphabet[rIndex]
+}
+function reverseWord(word){
+    wordOutput=""
+    for (const element of word) {
+       if(alphabet.includes(element)){
+         wordOutput+=reverse(element)
+       } 
+       else wordOutput += element
+        
+    }
+    return wordOutput;
+}
+
+console.log(reverseWord("how are you"))
+
+
+        let total = 0, count = 1;
+    while (count <= 10) {
+    total += count;
+    count += 1;
+    }
+    console.log(total);
+    // → 55 
+    
+  
+  </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decoder</title>
+</head>
+<body>
+    <h1>Decoder Tool</h1>
+    <form>
+        <label for="encoded-text">Encoded Text:</label>
+        <textarea id="encoded-text" placeholder="Enter encoded text"></textarea>
+        <br>
+        <label for="shift">Shift:</label>
+        <input type="number" id="shift" value="3">
+        <br>
+        <button id="decode-btn">Decode</button>
+        <br>
+        <label for="decoded-text">Decoded Text:</label>
+        <textarea id="decoded-text" readonly></textarea>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

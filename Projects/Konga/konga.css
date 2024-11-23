@@ -1,0 +1,305 @@
+*{
+    margin:0px;
+    padding:0px ;
+}
+
+.Container{
+    background-color: black;
+    
+}
+
+.yakata{
+    /* height: fit-content; */
+    width: 100%;
+    height: 70px;
+    display: block;
+}
+
+.logos{
+    display: flex;
+    height:40px ;
+    width: 100%;
+    justify-content: center;
+    background-color:antiquewhite;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image{
+    height:20px;
+    width: 110px;
+    margin: 0px;
+   
+}
+
+.konga-face{
+    height: 35px;
+    width: 110px;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    
+    
+}
+
+.header-top{
+   background-color:  #ed017f;
+    height: 55%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header-bottom{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+    background-color: #94004f;
+    height: 45%;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.hdd{
+    display: block;
+}
+
+.advert{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.main-advert{
+    height: 400px;
+    display: flex;
+ justify-content: space-around;
+    width: 66.7%;
+    margin-right: 7px;
+    margin-left: 9px;
+}
+.nivea{
+    border-radius: 6px;
+   height: 400px;
+   width: 100%;
+   margin: 6px;   
+}
+
+.side-advert{
+    display: grid;
+    padding-top: 7px;
+     justify-content: space-around; 
+    width: 33.3%;
+    height: 400px;
+}
+
+.compartment2{
+    display: flex;
+    height: 200px;
+    gap: 5px;
+} 
+
+.Image{
+    height:190px ;
+    width: 200px;
+   border-radius: 6px;
+   
+}
+
+.products{
+     display: flex;
+    background-color: #f2f2f2;
+    
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.pics{
+    height: 150px;
+    width: 100%;
+}
+.product{
+    width: 250px;
+    background-color: white;
+    height: 72vh;
+
+    .pics{
+        height: 230px;
+    }
+}
+
+.product:hover{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-about {
+    color:  rgba(0, 0, 0, 0.9);
+    padding-top: 5px;
+    font-size: 22px;
+    padding-left: 9px;
+    padding-right: 9px;
+    
+} 
+
+
+.price-line{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+
+    .discount{
+        color:  rgb(0, 0, 0) ;
+        font-size: x-large;
+        font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-right: 10px;
+    }
+    
+    .main-price{
+         color:  rgba(0, 0, 0, 0.9);
+        text-decoration: line-through;
+        font-size: large;
+        
+        margin-right: 10px;
+    }
+    
+    .percent{
+     background-color: rgba(252, 3, 3, 0.5);
+     border-radius: 6px;
+     width: 10px;
+    
+    }
+}
+
+
+.time{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    .duration{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+}
+
+.sales{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+   margin-top: 5px;
+   margin-bottom: 5px;
+
+   .sold{
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+.load{
+    margin-top: 0px;
+    height: 30px;
+    width: 50px;
+
+}
+}
+
+
+
+.button{
+    text-align: center;
+   
+    .add-button{
+        width: 93%;
+        color: #ed017f;
+        border: #ed017f 1px solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        height: 40px;
+       transition: 0.5s;
+    }
+    
+    .add-button:hover{
+        color: white;
+        background-color: #ed017f;
+    }
+}
+
+
+
+
+footer{
+    height: 73vh;
+}
+
+.foot-head{
+    height: 20%;
+    background-color:  rgb(80, 74, 74);
+    display:flex;
+    width: 100%;
+    /* flex-direction: row; */
+   
+}
+
+.email{
+    display: flex;
+    .msg{
+        height: 40px;
+    }
+    .main-text{
+        color: rgb(163, 163, 163);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .sub-text{
+        color: rgb(163, 163, 163);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.phone{
+    display: flex;
+    phone-i{
+        height:26 px;
+    }
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+}
+
+.gmail{
+    height: 52px;
+    border: none;
+}
+
+.subscribe-button{
+    height: 55px;
+    width: 100px;
+    margin-left: 0px;
+    border: none;
+    color: white;
+    background-color: #ed017f;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
