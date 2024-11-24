@@ -71,20 +71,23 @@
               <br />
               <input type="text"  class="details" placeholder="New password" required />
             </div>
-            <p class="text">
-              People who use our service may have uploaded your cnntact information to Facebook. Learn more
-            </p>
-            <p class="text">
-              By clicking Sign up,you agree to ousr Terms,Privacy Policy and Cookies Policy.
-               You may recieve SMS notifications from us and can opt out any time.
-            </p>
+            <div class="texts">
+              <p class="text">
+                People who use our service may have uploaded your cnntact information to Facebook. Learn more
+              </p>
+              <p class="text">
+                By clicking Sign up,you agree to ousr Terms,Privacy Policy and Cookies Policy.
+                 You may recieve SMS notifications from us and can opt out any time.
+              </p>
+            </div>
+           
             <div class="button">
               <button>
                 Sign up
               </button> 
             </div>
             <div class="a">
-              <a href="../class exercise/sign-up.html" >
+              <a href="../Facebook-log-in/Facebook-log-in.html" >
                 Already have an account &quest;
               </a>
             </div>
@@ -97,35 +100,6 @@
   <script>
     
 
-alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
-
-const reverse = (alpha)=>{
-    rIndex = 25 - alphabet.indexOf(alpha)
-    return alphabet[rIndex]
-}
-function reverseWord(word){
-    wordOutput=""
-    for (const element of word) {
-       if(alphabet.includes(element)){
-         wordOutput+=reverse(element)
-       } 
-       else wordOutput += element
-        
-    }
-    return wordOutput;
-}
-
-console.log(reverseWord("how are you"))
-
-
-        let total = 0, count = 1;
-    while (count <= 10) {
-    total += count;
-    count += 1;
-    }
-    console.log(total);
-    // → 55 
     
   
   </script>

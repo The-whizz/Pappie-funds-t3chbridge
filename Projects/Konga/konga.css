@@ -118,7 +118,7 @@
 
 .products{
      display: flex;
-    background-color: #f2f2f2;
+    background-color: white;
     
     justify-content: space-around;
     padding-top: 20px;
@@ -134,7 +134,7 @@
 .product{
     width: 250px;
     background-color: white;
-    height: 72vh;
+    height: 71vh;
 
     .pics{
         height: 230px;
