@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Facts</title>
+</head>
+<body>
+
+    <h1>Click to Get Cat Facts</h1>
+    <button id="fetchButton">Get Facts</button>
+
+    <div id="factsContainer">
+        <!-- The cat facts will be displayed here -->
+    </div>
+
+    <script>
+        // Function to make the request and fetch facts
+        const req = new XMLHttpRequest();
+        
+        const getFacts = new Promise((resolve, reject) => {
+            req.open("GET", "https://catfact.ninja/fact?limit=15&max_length=60");
+            req.responseType = "json";
+            req.onload = () => resolve(req.response);
+            req.onerror = () => reject(req.statusText);
+            req.send();
+        });
+
+        // Handle button click to fetch the facts
+        document.getElementById("fetchButton").addEventListener("click", () => {
+            getFacts
+                .then((response) => {
+                    // Clear any previous facts
+                    const factsContainer = document.getElementById("factsContainer");
+                    factsContainer.innerHTML = ''; 
+
+                    // Loop through the facts and display them
+                    response.data.forEach((fact, index) => {
+                        const factElement = document.createElement('p');
+                        factElement.textContent = `${index + 1}. ${fact.fact}`;
+                        factsContainer.appendChild(factElement);
+                    });
+                })
+                .then( response =>response.data)
+                .then(response => console.log('response')
+                ) ;
+                
+                // .catch((error) => {
+                //     console.log("Error:", error);
+                // });
+        });
+    </script>
+
+</body>
+</html>

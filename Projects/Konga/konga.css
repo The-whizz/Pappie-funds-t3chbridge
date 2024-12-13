@@ -44,6 +44,17 @@
     
 }
 
+.tp{
+
+    /* display: flex; */
+}
+
+.top{
+    color: white;
+    width: 10px;
+    /* line-height: 3%; */
+}
+
 .header-top{
    background-color:  #ed017f;
     height: 55%;
